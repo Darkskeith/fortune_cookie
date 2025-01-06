@@ -59,10 +59,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Fortune Cookie"),
-        titleTextStyle: Theme.of(context).textTheme.headlineLarge,
-        centerTitle: true,
-      ),
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          title: Text("Fortune Cookie"),
+          centerTitle: true,
+          titleTextStyle: Theme.of(context).textTheme.headlineMedium),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -89,11 +89,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-/*       floatingActionButton: FloatingActionButton(
-        onPressed: _randomFortune,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),  */ // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
